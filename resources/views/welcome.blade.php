@@ -6,6 +6,9 @@
 
   <title>Stumind</title>
 
+  <link rel="icon" type="image/png"
+  href="{{ asset('img/image.png') }}">
+
   <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -309,35 +312,51 @@
 
     /* IMPACT */
 
-    .impact-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    .impact-point{
+      display:flex;
+      flex-direction:column;
       gap:18px;
-      margin-top:10px;
+      margin-top:20px;
     }
 
-    .impact-card{
-      background:#fafafa;
-      border-radius:24px;
-      padding:26px;
-      transition:0.3s;
+    .impact-item{
+      display:flex;
+      align-items:flex-start;
+      gap:18px;
+      background:#fff7f9;
+      padding:20px 24px;
+      border-radius:20px;
     }
 
-    .impact-card:hover{
-      transform:translateY(-5px);
-      background:white;
-    }
-
-    .impact-icon{
-      width:64px;
-      height:64px;
+    .impact-emoji{
+      width:60px;
+      height:60px;
       border-radius:18px;
+      background:white;
       display:flex;
       justify-content:center;
       align-items:center;
       font-size:28px;
-      margin-bottom:18px;
+      flex-shrink:0;
     }
+
+    .impact-emoji i{
+      color:#ff7fa1;
+      font-size:26px;
+    }
+
+    .impact-item h3{
+      font-size:22px;
+      margin-bottom:6px;
+    }
+
+    .impact-item p{
+      color:#6d6d6d;
+      line-height:1.8;
+      margin:0;
+    }
+
+
 
     .impact-card h3{
       margin-bottom:10px;
@@ -603,7 +622,7 @@
 
     <div class="hero-image">
 
-      <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png">
+      <img src="img/mother.png">
 
     </div>
 
@@ -697,57 +716,51 @@
 
         <div class="info-image">
 
-          <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?q=80&w=1200&auto=format&fit=crop">
+          <img src="img/stunting anak.jpg">
 
         </div>
 
       </div>
 
-      <div class="impact-grid">
+      <div class="impact-point">
 
-        <div class="impact-card">
-
-          <div class="impact-icon pink">
-            🧠
+        <div class="impact-item">
+          <span class="impact-emoji">
+              <i class="fa-solid fa-brain"></i>
+          </span>
+          <div>
+            <h3>Perkembangan Otak</h3>
+            <p>
+              Kekurangan gizi dapat mempengaruhi
+              kemampuan belajar dan perkembangan anak.
+            </p>
           </div>
-
-          <h3>Perkembangan Otak</h3>
-
-          <p>
-            Kekurangan gizi dapat mempengaruhi
-            kemampuan belajar dan perkembangan anak.
-          </p>
-
         </div>
 
-        <div class="impact-card">
-
-          <div class="impact-icon green">
-            💪
+        <div class="impact-item">
+          <span class="impact-emoji">
+            <i class="fa-solid fa-shield-heart"></i>
+          </span>
+          <div>
+            <h3>Daya Tahan Tubuh</h3>
+            <p>
+              Anak lebih rentan sakit jika kebutuhan
+              nutrisi tidak terpenuhi dengan baik.
+            </p>
           </div>
-
-          <h3>Daya Tahan Tubuh</h3>
-
-          <p>
-            Anak lebih rentan sakit jika kebutuhan
-            nutrisi tidak terpenuhi dengan baik.
-          </p>
-
         </div>
 
-        <div class="impact-card">
-
-          <div class="impact-icon blue">
-            📈
+        <div class="impact-item">
+          <span class="impact-emoji">
+          <i class="fa-solid fa-chart-line"></i>
+        </span>
+          <div>
+            <h3>Pertumbuhan Fisik</h3>
+            <p>
+              Tinggi dan berat badan anak dapat
+              terhambat akibat kekurangan gizi.
+            </p>
           </div>
-
-          <h3>Pertumbuhan Fisik</h3>
-
-          <p>
-            Tinggi dan berat badan anak dapat
-            terhambat akibat kekurangan gizi.
-          </p>
-
         </div>
 
       </div>
